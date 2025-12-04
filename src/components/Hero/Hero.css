@@ -1,26 +1,28 @@
-.hero{
-    width: 100vw;
-    min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)) ,url('../../assets/hero.png'); /* used*/
-    background-size: cover;
-    color: white;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    rgba(8, 0, 58, 0.7),
+    rgba(8, 0, 58, 0.7)
+  ); /* used*/
+  background-size: cover;
+  color: white;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-text{
-    text-align:center;
-    max-width: 800px;
-}
-
-.hero-text h1{
-    font-size: 50px;
-    font-weight: 600;
+.hero-text {
+  text-align: center;
+  max-width: 800px;
 }
 
-.hero-text p{
-    font-size: medium;
-    margin: 15px auto 10px;
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: 600;
 }
 
+.hero-text p {
+  font-size: medium;
+  margin: 15px auto 10px;
+}
