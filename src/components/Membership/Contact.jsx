@@ -1,54 +1,44 @@
-import React from 'react'
-import './Contact.css'
-import email from '../../assets/email.png'
-import phone from '../../assets/phone.png'
-import location from '../../assets/location.png'
-
+import React from "react";
+import "./Contact.css";
+import email from "../../assets/email.png";
+import phone from "../../assets/phone.png";
+import location from "../../assets/location.png";
 
 const Contact = () => {
   return (
-    <div className='contactus'>
-        <div className="text">
-            <h2>Send us a message</h2>
-            <p>Feel free to reach out through contact form or find our contact information below. 
-              <br/>Your feedback, questions, and suggestions are important to us as we strive to provide  <br/>exceptional service to our university community.</p>
-            <div className="contact">
-               <div>
-                 <img src={email} alt="" />
-                 <span>info@pkggi.org</span>
-               </div>
+    <div className="contactus">
+      <div className="text">
+        <h2>Join ASCE CET</h2>
+        <p>
+          Become part of a vibrant community of civil engineering students at
+          CET. Explore our initiatives, events, and projects through the
+          official ASCE website, or proceed directly to the membership page to
+          join our chapter. We look forward to welcoming you on board!
+        </p>
 
-              <div>
-                 <img src={phone} alt="" />
-                 <span>+91-9053055301, +91-9053055302</span>
-              </div>
-              
-              <div>
-                 <img src={location} alt="" />
-                 <span>Mohindinpur Thirana, Assandh Road, Near Thermal Power Plant, Madlauda, Panipat,</span>
-              </div>
-            </div>
+        {/* Buttons for website + membership */}
+        <div className="">
+          <a
+            href="https://www.asce.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="butn"
+          >
+            Visit ASCE Website
+          </a>
+
+          <a
+            href="https://asce.org/membership"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="butn secondary"
+          >
+            Become a Member
+          </a>
         </div>
-
-       <div className='inputs'>
-         <form>
-            <label>Your Name:</label>
-            <input type="text" placeholder='Enter Your Name' required/>
-
-            <label>Phone No:</label>
-            <input type="tel"required/>
-
-            <label>Email:</label>
-            <input type="text" placeholder='xyz@gmail.com' required/>
-
-            <label>Message:</label>
-            <textarea rows={6} required></textarea>
-
-            <button type='submit' className='butn'>Submit</button>
-         </form>
-       </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

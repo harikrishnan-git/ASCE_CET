@@ -1,74 +1,78 @@
-.contactus{
-    display: flex;
-    gap: 40px;               
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 90%;
-    margin: 40px auto;
-    justify-content: center;
-    align-items: flex-start;  
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 30px; 
-
+.contactus {
+  display: flex;
+  gap: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
 .text h2,
 .text p {
-    margin: 20px 0;                 
+  margin: 20px 0;
 }
 
 .inputs {
-    flex: 1;                           
-    min-width: 300px;                
+  flex: 1;
+  min-width: 300px;
 }
 
 .inputs form {
-    display: flex;
-    flex-direction: column;           
-    gap: 16px;                        
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.butn{
-    background-color: rgb(38, 38, 109);
-    color: white;
-    height: 40px;                     
-    width: 100px;
-    border: none;
-    border-radius: 13px;
-    margin-top:9px ;
+.butn {
+  background-color: rgb(38, 38, 109);
+  color: white;
+  height: 40px;
+  width: 100px;
+  border: none;
+  padding: 15px;
+  margin-right: 5%;
+  border-radius: 13px;
+  margin-top: 9px;
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    font-weight: 600;
-    font-size: 1rem;
-    margin-left: 8px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 8px;
 }
 
-.contact img{
-    height: 20px;
-    width: 20px;
+.contact img {
+  height: 20px;
+  width: 20px;
 }
 
-.inputs input,textarea{
-    background-color: #EBECFE;
-    display: block;
-    outline: 0;
-    padding: 9px;
-    border: 1.5px solid #ccc;        
-    border-radius: 6px;               
-    font-size: 1rem;                
-    width: 100%;                   
-    box-sizing: border-box; 
+.inputs input,
+textarea {
+  background-color: #ebecfe;
+  display: block;
+  outline: 0;
+  padding: 9px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /*----media query----*/
 
-@media only screen and (max-width:600px){
-    .contactus{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
+@media only screen and (max-width: 600px) {
+  .contactus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .butn {
+    display: block;
+  }
 }
