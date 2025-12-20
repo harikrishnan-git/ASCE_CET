@@ -4,9 +4,22 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero">
+      {/* Background eco particles */}
+      <ul className="eco-particles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
       <div className="hero-text">
-        {/* <h1>Welcome to PKG College of Engineering & Technology</h1>
-            <p>PKG College is one of the North India's premier educational group with 3 state-of-the-art well known Campuses representing a cluster of vibrant educational establishments spread over 80 Acres of Land Area Campus in Delhi-NCR. </p> */}
+        <h1>Sustainable Tomorrow</h1>
+        <p>Building eco-conscious minds for a greener future</p>
       </div>
     </div>
   );

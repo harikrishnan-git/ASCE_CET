@@ -17,7 +17,7 @@ const Contact = () => {
         </p>
 
         {/* Buttons for website + membership */}
-        <div className="">
+        <div className="join-links">
           <a
             href="https://www.asce.org"
             target="_blank"

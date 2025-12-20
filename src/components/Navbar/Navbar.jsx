@@ -27,11 +27,11 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="programs" smooth={true} offset={-310} duration={500}>
             Activity
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="aboutus" smooth={true} offset={-150} duration={500}>
             About Us
@@ -39,12 +39,12 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="campus" smooth={true} offset={-250} duration={500}>
-            Events
+            Team
           </Link>
         </li>
         <li>
           <Link to="testimonials" smooth={true} offset={-310} duration={500}>
-            Team
+            Events
           </Link>
         </li>
         <li>

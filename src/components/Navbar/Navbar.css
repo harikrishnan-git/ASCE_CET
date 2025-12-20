@@ -1,68 +1,67 @@
-img{
-    height: 90px;
-    width: 130px;
-    margin-left: 10px;
+img {
+  height: 90px;
+  width: 130px;
+  margin-left: 10px;
 }
 
-nav{
-    color: white;
-    position: fixed;     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;       
-    width: 100%;                                    
-    height: 90px;
-    z-index: 10;
+nav {
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  z-index: 100;
 }
 
-nav ul li{
-    display: inline-block;
-    margin: 5px 20px;
-    font-size: 25px;
-    font-family: "Seoge UI", sans-serif;
-    cursor: pointer;
+nav ul li {
+  display: inline-block;
+  margin: 5px 20px;
+  font-size: 25px;
+  font-family: "Seoge UI", sans-serif;
+  cursor: pointer;
 }
 
-.darknav{
-    background: rgb(51, 51, 136);
-    transition: 0.5s;
+.darknav {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  transition: 0.5s;
 }
 
-.menuicon{
-    display: none;
+.menuicon {
+  display: none;
 }
 
 /*-------media query---------*/
 
-@media (max-width:1200px){
-    .nav{
-        padding:0;
-    }   
-    .nav ul{
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        padding-top: 70px;
-        background: #212EA0;
-        width: 200px;
-        transition: 0.5s;
-    }
-    ul li{
-        display: block;
-        margin: 25px 40px;
-    }
-    .menuicon{
-        display: block;
-        height: 50px;
-        width: 30px;
-        cursor: pointer;
-        margin-left: 0;
-        margin-right: 50px;
-    }
-    .nav ul.hidemobilemenu{
-        right:-200px;
-    }
-
+@media (max-width: 1200px) {
+  .nav {
+    padding: 0;
+  }
+  .nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding-top: 70px;
+    background: #212ea0;
+    width: 200px;
+    transition: 0.5s;
+  }
+  ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+  .menuicon {
+    display: block;
+    height: 50px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .nav ul.hidemobilemenu {
+    right: -200px;
+  }
 }

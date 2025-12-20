@@ -1,28 +1,107 @@
 .hero {
-  width: 100vw;
-  min-height: 100vh;
-  background: linear-gradient(
-    rgba(8, 0, 58, 0.7),
-    rgba(8, 0, 58, 0.7)
-  ); /* used*/
-  background-size: cover;
-  color: white;
-  background-position: center;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero-text {
+  color: white;
   text-align: center;
-  max-width: 800px;
+  z-index: 2;
 }
 
 .hero-text h1 {
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 3rem;
+  animation: fadeUp 1.5s ease;
 }
 
 .hero-text p {
-  font-size: medium;
-  margin: 15px auto 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Eco particles */
+.eco-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  list-style: none;
+}
+
+.eco-particles li {
+  position: absolute;
+  bottom: -50px;
+  background: rgba(144, 238, 144, 0.5);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: floatUp 15s linear infinite;
+}
+
+/* random sizes & delays */
+.eco-particles li:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.eco-particles li:nth-child(2) {
+  left: 20%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 3s;
+}
+.eco-particles li:nth-child(3) {
+  left: 35%;
+  animation-delay: 6s;
+}
+.eco-particles li:nth-child(4) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 2s;
+}
+.eco-particles li:nth-child(5) {
+  left: 65%;
+  animation-delay: 4s;
+}
+.eco-particles li:nth-child(6) {
+  left: 75%;
+  width: 35px;
+  height: 35px;
+  animation-delay: 1s;
+}
+.eco-particles li:nth-child(7) {
+  left: 85%;
+  animation-delay: 5s;
+}
+.eco-particles li:nth-child(8) {
+  left: 95%;
+  animation-delay: 7s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
