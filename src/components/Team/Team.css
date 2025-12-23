@@ -1,0 +1,123 @@
+/* =============================
+   Campus container
+============================= */
+.campus {
+  margin: 32px auto;
+  width: 92%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* =============================
+   Designation section
+============================= */
+.designation-section {
+  margin-bottom: 48px;
+}
+
+.designation-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1f2937;
+}
+
+/* =============================
+   Gallery layout
+============================= */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* =============================
+   Image card
+============================= */
+.img-card {
+  width: 220px; /* fixed card width = consistent layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.img-card:hover {
+  transform: translateY(-4px);
+}
+
+/* =============================
+   Image styling
+============================= */
+.img-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top; /* focuses more on face */
+  border-radius: 50%;
+  background: #f3f4f6;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================
+   Name label
+============================= */
+.person-name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+  line-height: 1.3;
+}
+
+/* =============================
+   Responsive tweaks
+============================= */
+@media (max-width: 900px) {
+  .img-card {
+    width: 200px;
+  }
+
+  .img-card img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 520px) {
+  .designation-title {
+    font-size: 1.4rem;
+  }
+
+  .img-card {
+    width: 100%;
+  }
+
+  .img-card img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* =============================
+   Debug helpers
+============================= */
+.campus.debug {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff7e6;
+  border: 1px dashed #f59e0b;
+}
+
+.glob-keys {
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  overflow-x: auto;
+}

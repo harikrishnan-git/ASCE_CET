@@ -1,13 +1,9 @@
 import React from "react";
 import "./About.css";
-import aboutsection from "../../assets/aboutsection.jpg";
 
 const About = () => {
   return (
     <div className="about" id="aboutus">
-      {/* <div className="aboutleft">
-            <img src={aboutsection} alt="" />
-        </div> */}
       <div className="aboutright">
         <h3>ABOUT US</h3>
         <h2>Nurturing Tomorrow's Leaders Today</h2>

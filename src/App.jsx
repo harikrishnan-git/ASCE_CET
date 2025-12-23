@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Programs from "./components/Activity/Programs";
+import Programs from "./components/Programs/Programs";
 import Title from "./components/Title/Title";
 import About from "./components/About/About";
-import Campus from "./components/Team/Campus";
+import Team from "./components/Team/Team";
 import Testimonials from "./components/Events/Testimonials";
-import Contact from "./components/Membership/Contact";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         <Programs /> */}
         <About />
         <Title subTitle="TEAM" title="" />
-        <Campus />
+        <Team />
         <Testimonials />
         <Title subTitle="JOIN US" title="" />
         <Contact />
