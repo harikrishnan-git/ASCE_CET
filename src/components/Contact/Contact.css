@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 60px;
+  background: #f5f9f6;
 }
 
 .text h2,
@@ -26,8 +27,12 @@
   gap: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .butn {
-  background-color: rgb(38, 38, 109);
+  background-color: #2f5d3a;
   color: white;
   height: 40px;
   width: 100px;
@@ -35,7 +40,7 @@
   padding: 15px;
   margin-right: 5%;
   border-radius: 13px;
-  margin-top: 9px;
+  margin-top: 15px;
 }
 
 .contact {

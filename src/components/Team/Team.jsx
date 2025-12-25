@@ -94,6 +94,7 @@ const Campus = () => {
 
   return (
     <div className="campus">
+      <h2 className="section-title">Our Team</h2>
       {designationEntries.map(([designation, people]) => (
         <div key={designation} className="designation-section">
           {/* 🔹 DESIGNATION HEADING */}
