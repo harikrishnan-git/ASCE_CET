@@ -2,9 +2,12 @@ import React, { useMemo, useEffect } from "react";
 import "./Team.css";
 
 // Load images from PHOTO/<DESIGNATION>/*
-const modules = import.meta.glob("/src/assets/People/**/*.{jpg,jpeg,png,svg}", {
-  eager: true,
-});
+const modules = import.meta.glob(
+  "/src/assets/People/**/*.{jpg,jpeg,png,svg,webp}",
+  {
+    eager: true,
+  }
+);
 
 // 🔒 DO NOT CHANGE — filename filters preserved
 const getPersonNameFromFilename = (filenameWithExt) => {
