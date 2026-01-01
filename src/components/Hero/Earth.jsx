@@ -8,7 +8,7 @@ export default function Earth() {
   const earthRef = useRef();
   const { mouse, viewport } = useThree();
 
-  const texture = useTexture("src/assets/earth.jpg");
+  const texture = useTexture(earth);
 
   // Radius relative to screen width
   const radius = Math.min(viewport.width, viewport.height) * 0.45;
