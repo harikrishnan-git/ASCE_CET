@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Newsletter from "./components/Newsletter/Newsletter";
 import Programs from "./components/Programs/Programs";
 import Title from "./components/Title/Title";
 import About from "./components/About/About";
@@ -20,8 +21,9 @@ const App = () => {
         <About />
         <Team />
         <Testimonials />
+        <Newsletter />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
