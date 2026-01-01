@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Team from "./components/Team/Team";
 import Testimonials from "./components/Events/Testimonials";
 import Contact from "./components/Contact/Contact";
+import Symposia from "./components/symposia/Symposia";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Programs /> */}
         <About />
         <Team />
+        <Symposia />
         <Testimonials />
         <Newsletter />
         <Contact />

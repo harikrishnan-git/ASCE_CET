@@ -1,0 +1,73 @@
+.symposia {
+  width: 100%;
+  padding: 80px 0;
+  background: #f5f9f6;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2f5d3a;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.symposia-grid {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.symposia-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.symposia-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.symposia-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.symposia-card h3 {
+  font-size: 1.2rem;
+  color: #2f5d3a;
+  margin-bottom: 12px;
+}
+
+.symposia-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .symposia {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
