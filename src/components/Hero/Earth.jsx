@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
+import earth from "src/assets/earth.jpg";
 
 export default function Earth() {
   const earthRef = useRef();
