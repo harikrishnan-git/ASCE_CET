@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import "./Team.css";
 
 // Load images from PHOTO/<DESIGNATION>/*
@@ -23,6 +23,27 @@ const getPersonNameFromFilename = (filenameWithExt) => {
 };
 
 const Campus = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target); // animate once
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    const elements = document.querySelectorAll(".reveal");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   const { designationEntries } = useMemo(() => {
     /**
      * {

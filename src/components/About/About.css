@@ -1,3 +1,5 @@
+/* ================= ABOUT SECTION ================= */
+
 .about {
   display: flex;
   align-items: center;
@@ -5,12 +7,30 @@
   width: 100%;
   margin: 60px auto;
   gap: 30px;
+
+  /* animation trigger */
+  overflow: hidden;
 }
 
+/* LEFT IMAGE SLIDE-IN */
 .aboutleft img {
   height: 300px;
   width: 300px;
   border-radius: 20px;
+
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideLeft 1.2s ease forwards;
+}
+
+/* RIGHT TEXT SLIDE-IN */
+.aboutright {
+  margin: 5%;
+
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideRight 1.2s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .aboutright h3 {
@@ -27,15 +47,43 @@
   color: #676767;
 }
 
-.aboutright {
-  margin: 5%;
+/* ================= ANIMATIONS ================= */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-/*----media query----*/
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media only screen and (max-width: 600px) {
   .about {
-    display: flex;
     flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .aboutleft img {
+    animation-delay: 0s;
+  }
+
+  .aboutright {
+    animation-delay: 0.2s;
   }
 }

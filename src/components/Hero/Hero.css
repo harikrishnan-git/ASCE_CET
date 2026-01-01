@@ -1,3 +1,5 @@
+/* ================= HERO SECTION ================= */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -7,7 +9,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Page load animation */
+  opacity: 0;
+  animation: heroReveal 1.2s ease-out forwards;
 }
+
+/* ================= HERO TEXT ================= */
 
 .hero-text {
   color: white;
@@ -17,22 +25,29 @@
 
 .hero-text h1 {
   font-size: 3rem;
-  animation: fadeUp 1.5s ease;
+  opacity: 0;
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.5s;
 }
 
 .hero-text p {
   margin-top: 10px;
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0;
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.8s;
 }
 
-/* Eco particles */
+/* ================= ECO PARTICLES ================= */
+
 .eco-particles {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .eco-particles li {
@@ -42,57 +57,69 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
+
   animation: floatUp 15s linear infinite;
+  animation-delay: calc(var(--i) * 0.8s);
+  opacity: 0;
 }
 
-/* random sizes & delays */
+/* Random positions, sizes, and delays */
 .eco-particles li:nth-child(1) {
   left: 10%;
-  animation-delay: 0s;
+  --i: 1;
 }
+
 .eco-particles li:nth-child(2) {
   left: 20%;
   width: 30px;
   height: 30px;
-  animation-delay: 3s;
+  --i: 2;
 }
+
 .eco-particles li:nth-child(3) {
   left: 35%;
-  animation-delay: 6s;
+  --i: 3;
 }
+
 .eco-particles li:nth-child(4) {
   left: 50%;
   width: 25px;
   height: 25px;
-  animation-delay: 2s;
+  --i: 4;
 }
+
 .eco-particles li:nth-child(5) {
   left: 65%;
-  animation-delay: 4s;
+  --i: 5;
 }
+
 .eco-particles li:nth-child(6) {
   left: 75%;
   width: 35px;
   height: 35px;
-  animation-delay: 1s;
-}
-.eco-particles li:nth-child(7) {
-  left: 85%;
-  animation-delay: 5s;
-}
-.eco-particles li:nth-child(8) {
-  left: 95%;
-  animation-delay: 7s;
+  --i: 6;
 }
 
-@keyframes floatUp {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-110vh) rotate(360deg);
+.eco-particles li:nth-child(7) {
+  left: 85%;
+  --i: 7;
+}
+
+.eco-particles li:nth-child(8) {
+  left: 95%;
+  --i: 8;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes heroReveal {
+  from {
     opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -104,5 +131,19 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
   }
 }
