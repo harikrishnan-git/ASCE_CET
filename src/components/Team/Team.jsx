@@ -98,14 +98,14 @@ const Campus = () => {
       {designationEntries.map(([designation, people]) => (
         <div key={designation} className="designation-section">
           {/* 🔹 DESIGNATION HEADING */}
-          <h2 className="designation-title">{designation}</h2>
+          <h2 className="designation-title">{designation.toUpperCase()}</h2>
 
           {/* 🔹 PHOTOS UNDER DESIGNATION */}
           <div className="gallery">
             {people.map((person, i) => (
               <div key={i} className="img-card">
-                <img src={person.src} alt={person.name} />
-                <div className="person-name">{person.name}</div>
+                <img src={person.src} alt={person.name.toUpperCase()} />
+                <div className="person-name">{person.name.toUpperCase()}</div>
               </div>
             ))}
           </div>
