@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import EarthScene from "./EarthScene";
 
 const Hero = () => {
   return (
@@ -18,8 +19,9 @@ const Hero = () => {
       </ul>
 
       <div className="hero-text">
-        <h1>Sustainable Tomorrow</h1>
-        <p>Building eco-conscious minds for a greener future</p>
+        <div style={{ height: "60vh", width: "60vw" }}>
+          <EarthScene />
+        </div>
       </div>
     </div>
   );
